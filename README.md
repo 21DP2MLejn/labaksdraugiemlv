@@ -10,7 +10,7 @@ Mūsu izveidotā vietne ir līdzīga draugiem.lv, bet pārtaisīta versija ar m�
 
 - #100C08  
 - #E42024  
-- #333333  
+- #333333 Pelēks
 - #262626  
 - #000000
 
