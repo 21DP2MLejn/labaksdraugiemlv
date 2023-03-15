@@ -15,4 +15,6 @@ Izmantotais fonts -
 Fonts - Be Vietnam Pro (https://fonts.google.com/specimen/Be+Vietnam+Pro)
 
 
+![logo](https://cdn.discordapp.com/attachments/940180048273621033/1085489739869724692/image.png)
+
 
