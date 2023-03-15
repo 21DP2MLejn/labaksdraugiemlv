@@ -16,7 +16,7 @@ M큰su izveidot훮 vietne ir l카dz카ga draugiem.lv, bet p훮rtais카ta versija ar m�
 
 ## Izmantotais fonts:
 
-- Fonts - Be Vietnam Pro (https://fonts.google.com/specimen/Be+Vietnam+Pro)
+- Be Vietnam Pro (https://fonts.google.com/specimen/Be+Vietnam+Pro)
 
 
 
