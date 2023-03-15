@@ -8,11 +8,11 @@ M큰su izveidot훮 vietne ir l카dz카ga draugiem.lv, bet p훮rtais카ta versija ar m�
 
 ## Izmantot훮s kr훮sas hexcode:
 
-- #051e3e  
-- #251e3e  
-- #451e3e  
-- #651e3e  
-- #851e3e
+- #100C08  
+- #E42024  
+- #333333  
+- #262626  
+- #000000
 
 ## Izmantotais fonts:
 
