@@ -1,4 +1,4 @@
-# labaksdraugiemlv
+# cuhanilv
 Šo projektu veidoja Rīgas Valsts tehnikuma DP2-2 grupas audzēkņi - Mārtiņš Gatis Lejnieks, Jānis Gustavs Fernats, Guntis Gūtmanis.
 
 
