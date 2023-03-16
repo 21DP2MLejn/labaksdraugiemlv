@@ -1,69 +1,162 @@
-body{
+html,body{
     background-color: #333333;
+    margin: 0px;
+    padding: 0;
+}
+
+:root{
+    --color-light-black: #100c08;
+    --color-red: #e42024;
+    --color-gray: #333333;
+    --color-dark-gray: #262626;
+    --color-black: #000000;
+}
+
+.parent{
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+
 }
 
 .square{
-    position: absolute;
-    margin: auto;
-    background-color: #262626;
+    position: relative;
+    background-color: var(--color-black);
+    opacity: 45%;
     width: 550px;
     height: 600px;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 25px;
+    top: 145px;
+
 }
 
 
 .cuhanitext{
-    color: white;
-    z-index: 1;
+    color: #FFFFFF;
+    z-index: 2;
     position: absolute;
-    margin: auto;
-    width: 300px;
-    top: 200px;
-    font-size: 110px;
-    left: 775px;
-}
+    font-size: 90px;
+    font-family: 'Be Vietnam Pro';
+    top: 10px;
+    left: 120px;
+    margin: 0;
 
-.emailsquare{
-    
-    position: absolute;
-    margin: auto;
-    width: 55px;
-    height: 60px;
-    top: 400px;;
-    left: 850px;
-    
-}
-
-
-
-.loginbut{
-    background-color: white;
-    position: absolute;
-    margin: auto;
-    width: 150px;
-    height: 45px;
-    top: 500px;;
-    left: 870px;
 }
 
 .signintext{
-    color: white;
-    z-index: 1;
+    color: #FFFFFF;
     position: absolute;
-    margin: auto;
-    width: 300px;
-    top: 320px;
-    font-size: 50px;
-    left: 870px;
+    font-size: 45px;
+    font-family: 'Be Vietnam Pro';
+    z-index: 2;
+    top: 105px;
+    left: 195px;
 }
 
-body{
-    margin: 0px;
-    width: 100%;
+.emailsquare{
+    position: absolute;
+    width: 55px;
+    height: 60px;
+    z-index: 2;
+    top: 260px;
+    left: 115px;
+
 }
+
+input[type=email]{
+    background-color: #262626;
+    border: none;
+    width: 300px;
+    height: 60px;
+    color: white;
+    border-radius: 20px;
+    font-family: "Be Vietnam Pro";
+    padding-left: 20px;
+    font-size: medium;
+}
+
+input[type=email]:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+.passwordsquare{
+    position: absolute;
+    z-index: 2;
+    top: 360px;
+    left: 115px;
+}
+
+
+input[type=password]{
+    background-color: #262626;
+    border: none;
+    width: 300px;
+    height: 60px;
+    color: white;
+    border-radius: 20px;
+    font-family: "Be Vietnam Pro";
+    font-size: medium;
+    padding-left: 20px;
+}
+input[type=password]:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+
+
+
+.but{
+    background-color: var(--color-gray);
+    position: absolute;
+    width: 150px;
+    height: 45px;
+    z-index: 2;
+    top: 470px;
+    border: none;
+    font-family: "Be Vietnam Pro";
+    font-size: medium;
+    color: white;
+    border-radius: 20px;
+}
+
+
+.login{
+    left: 115px;
+}
+
+.register{
+    left: 285px;
+}
+
+
+.but:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.forgot{
+    width: 125px;
+    height: 100px;
+    top: 550px;
+    left: 217px;
+    position: absolute;
+    font-size: small;
+    vertical-align: middle;
+    line-height: 15px;
+    color: white;
+    display: flex;   
+    font-family: 'Be Vietnam Pro';
+
+}
+
+
 
 .footer{
     width: 100%;
@@ -72,25 +165,40 @@ body{
     position: absolute;
     bottom: 0px;
     line-height: normal;
+    z-index: 2;
 }
 
 .About{
-    width: 125px;
-    height: 50px;
-    position: absolute;
     left: 25px;
-    font-size: large;
-    vertical-align: middle;
-    line-height: 15px;
-    color: white;
 }
 .Contact{
+    left: 125px;
+}
+
+.footerstyle{
     width: 125px;
     height: 50px;
     position: absolute;
-    left: 125px;
     font-size: large;
     vertical-align: middle;
     line-height: 15px;
     color: white;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    font-family: 'Be Vietnam Pro';
+}
+
+.cuhanilogodiv{
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    left: 96%;
+    top: 1px;
+
+}
+
+.cuhanilogo{
+    width: 55px;
+    height: 45px;
 }
