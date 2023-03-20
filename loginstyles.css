@@ -1,15 +1,35 @@
-html,body{
-    background-color: #333333;
-    margin: 0px;
+*{
+    margin: 0;
     padding: 0;
 }
 
+
+body {
+	background: linear-gradient(-45deg,  #000000, #11100f, #333333 );
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 :root{
-    --color-light-black: #100c08;
-    --color-red: #e42024;
+    --color-light-black: #343434;
+    --color-red: #2a0000;
     --color-gray: #333333;
     --color-dark-gray: #262626;
-    --color-black: #000000;
+    --color-black: #0A0A0A;
 }
 
 .parent{
@@ -23,7 +43,7 @@ html,body{
 .square{
     position: relative;
     background-color: var(--color-black);
-    opacity: 45%;
+    opacity: 75%;
     width: 550px;
     height: 600px;
     display: flex;
@@ -31,6 +51,7 @@ html,body{
     justify-items: center;
     border-radius: 25px;
     top: 145px;
+    box-shadow: rgba(121, 121, 121, 0.418) 0px 10px 24px;
 
 }
 
@@ -50,11 +71,11 @@ html,body{
 .signintext{
     color: #FFFFFF;
     position: absolute;
-    font-size: 45px;
+    font-size: 40px;
     font-family: 'Be Vietnam Pro';
     z-index: 2;
-    top: 105px;
-    left: 195px;
+    top: 125px;
+    left: 210px;
 }
 
 .emailsquare{
@@ -62,7 +83,7 @@ html,body{
     width: 55px;
     height: 60px;
     z-index: 2;
-    top: 260px;
+    top: 230px;
     left: 115px;
 
 }
@@ -87,7 +108,7 @@ input[type=email]:hover{
 .passwordsquare{
     position: absolute;
     z-index: 2;
-    top: 360px;
+    top: 330px;
     left: 115px;
 }
 
@@ -117,7 +138,7 @@ input[type=password]:hover{
     width: 150px;
     height: 45px;
     z-index: 2;
-    top: 470px;
+    top: 440px;
     border: none;
     font-family: "Be Vietnam Pro";
     font-size: medium;
@@ -136,7 +157,7 @@ input[type=password]:hover{
 
 
 .but:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -144,7 +165,7 @@ input[type=password]:hover{
 .forgot{
     width: 125px;
     height: 100px;
-    top: 550px;
+    top: 520px;
     left: 217px;
     position: absolute;
     font-size: small;
@@ -161,11 +182,12 @@ input[type=password]:hover{
 .footer{
     width: 100%;
     height: 50px;
-    background-color: #262626;
+    background-color: var(--color-black);
     position: absolute;
     bottom: 0px;
     line-height: normal;
     z-index: 2;
+    opacity: 75%;
 }
 
 .About{
