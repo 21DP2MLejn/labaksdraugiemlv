@@ -6,14 +6,6 @@ M큰su izveidot훮 vietne ir l카dz카ga draugiem.lv, bet p훮rtais카ta versija ar m�
 
 
 
-## Izmantot훮s kr훮sas hexcode:
-
-- #100C08  
-- #E42024  
-- #333333
-- #262626  
-- #000000
-
 ## Izmantotais fonts:
 
 - Be Vietnam Pro (https://fonts.google.com/specimen/Be+Vietnam+Pro)

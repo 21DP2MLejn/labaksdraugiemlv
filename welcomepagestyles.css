@@ -27,6 +27,7 @@ h1 {
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    z-index: 2;
 }
 
 body {
@@ -34,6 +35,8 @@ body {
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
 	height: 100vh;
+    margin: 0px;
+    overflow: hidden;
 }
 
 @keyframes gradient {
@@ -61,6 +64,15 @@ body {
     position: absolute;
     top: 300px;
     left: 100px;
+    z-index: 2;
+}
+
+.already-registered{
+    position: absolute;
+    left: 1250px;
+    top: 600px;
+    z-index: 2;
+
 }
 
 h2{
@@ -84,8 +96,6 @@ p{
     width: 150px;
     height: 45px;
     z-index: 2;
-    top: 350px;
-    left: 100px;
     border: none;
     font-family: "Be Vietnam Pro";
     font-size: medium;
@@ -94,7 +104,60 @@ p{
     margin-left: 20px;
 }
 
+.signup{
+    top: 350px;
+    left: 350px;
+
+}
+
+.login{
+    left: 1255px;
+    top: 650px;
+}
+
 .but:hover{
     transform: scale(1.05);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.slide-in{
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    left: 960px;
+    top: 0;
+    background-color: var(--color-red);
+    transform: skewX(295.9deg);
+    display: flex;
+    z-index: 1;
+    animation: sliding 0.55s ease-in-out;
+}
+
+@keyframes sliding {
+    0%{
+        transform: skew(295.9deg) translateY(-1200px);
+    }
+    100%{
+        transform: skew(295.9deg);
+    }
+    
+}
+
+
+
+
+@keyframes fade-in {
+    0%{
+        opacity: 0%;
+    }
+
+    50%{
+        opacity: 50%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+
 }
