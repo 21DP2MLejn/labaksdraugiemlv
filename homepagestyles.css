@@ -1,16 +1,32 @@
-html,body{
-    background-color: #333333;
-    margin: 0px;
+*{
+    margin: 0;
     padding: 0;
 }
 
+body{
+    background-color: #333333;
+}
+
 :root{
-    --color-light-black: #11100f;
+    --color-light-black: #343434;
     --color-red:#2a0000 ;
+    --color-light-red: #d63838;
     --color-gray: #333333;
     --color-dark-gray: #262626;
-    --color-black: #000000;
+    --color-black: #0A0A0A;
 }
+
+h1{
+    color: white;
+    font-size: 45px;
+    font-family: 'Be Vietnam Pro';
+    margin: 20px;
+    display: flex;
+    position: relative;
+    left: 300px;
+    width: 300px;
+}
+
 
 .header{
     width: 100%;
@@ -38,8 +54,11 @@ html,body{
 
 .profilepic{
     display: block;
-    width: 56px;
-    height: 56px;
+    width: 45px;
+    height: 45px;
+}
+.profilepic:hover{
+    transform: scale(1.1);
 }
 
 .cuhanilogotextdiv{
@@ -58,23 +77,86 @@ html,body{
 
 .menubutton{
     background-color: transparent;
-    position:absolute;
+    position: absolute;
     height: 50px;
     width: 50px;
-    top: 5px;
+    top: 6px;
     left: 10px;
     padding: 0;
     border: 0;
+    display:flex
 }
 
 .menubuttonimage{
-    height: 50px;
-    width: 50px; 
+    height: 45px;
+    width: 45px; 
 }
 
 .menuslider{
-    background-color: var(--color-light-black);
+    background-color: var(--color-black);
     position: absolute;
-    height: 93.5%;
+    height: 93%;
     width: 300px;
+    display: none;
+    z-index: 2;
+}
+
+.menubutton:hover{
+    transform: scale(1.1);
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-light-red);
+    position: relative;
+    box-shadow: 0px 3px 15px 5px #4a0000;
+    margin-top: 30px;
+
+}
+
+.under{
+    top: 550px;
+}
+
+.card-container{
+    width: 100%;
+    height: 520px;
+
+}
+
+
+.card{
+    width: 250px;
+    height: 450px;
+    background-color: var(--color-black);
+    position: relative;
+    border-radius: 25px;
+    margin: 20px;
+    margin-left: 42px;
+    margin-right: 20px;
+    display: inline-block;
+    transition: transform .2s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 3px 15px 5px #4a0000;
+
+}
+
+.button{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    color: white;
+    background-color: #0A0A0A;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    font-family: 'Be Vietnam Pro';
+}
+
+.button:hover{
+    background-color: #262626;
 }
