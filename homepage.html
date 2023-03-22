@@ -4,20 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="homepagestyles.css">
+    <script src="menuslider.js"></script>
     <title>Cuhani.lv/home</title>
 </head>
 <body>
     <container>
     <div class="header">
-        <button class="menubutton"><img src="images\menubutton.png" class="menubuttonimage"></button>
+        <button id="menbut" onclick="openmenu()" class="menubutton"><img src="images\menubutton.png" class="menubuttonimage"></button>
         <div class="cuhanilogotextdiv">
             <img src="images\cuhanilogotext.png" alt="Cuhani Logo Text" class="cuhanilogotext">
         </div>
-        <button class="profilepicbut"><img src="images\cuhanilogo.png" alt="profile" class="profilepic"></button>
+        <button class="profilepicbut"><img src="images\defaultpfp.png" alt="profile" class="profilepic"></button>
     </div>
     </container>
-    <div hidden class="menuslider">
+    
+    <div id="sidebar" class="menuslider">
+        <div class="home">
+            <button class="button">Home</button>
+        </div>
+        <div class="social">
+            <button class="button">Social</button>
+        </div>
+        <div class="games">
+            <button class="button">Games</button>
+        </div>
+        <div class="wallet">
+            <button class="button">Wallet</button>
+        </div>
+        <div class="log-out">
+            <button class="button">Log Out</button>
+        </div>
+    </div>
+
+    <h1>NEW POSTS</h1>
+
+
+    <div class="line under">
 
     </div>
+
+
+    <div class="card-container">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+
+
 </body>
 </html>
