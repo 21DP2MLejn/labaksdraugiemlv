@@ -23,10 +23,33 @@ h1{
     margin: 20px;
     display: flex;
     position: relative;
-    left: 300px;
+    left: 405px;
     width: 300px;
+    height: 75px;
 }
 
+h2{
+    color: white;
+    font-size: 35px;
+    font-family: 'Be Vietnam Pro';
+    margin: 20px;
+    display: flex;
+    position: absolute;
+    width: 300px;
+    height: 75px;
+    width: 250px;
+
+}
+
+#add-balance{
+    left: 370px;
+    top: 85px;
+}
+
+#your-balance{
+    top: 270px;
+    left: 365px;
+}
 
 .header{
     width: 100%;
@@ -64,7 +87,7 @@ h1{
 .cuhanilogotextdiv{
     position: relative;
     padding: 0;
-    width:180px;
+    width: 180px;
     height: auto;
     margin: auto;
     display: inline-block;
@@ -119,4 +142,58 @@ h1{
 
 .button:hover{
     background-color: #262626;
+}
+
+.block{
+    width: 1000px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: var(--color-black);
+    display: flex;
+    position: absolute;
+    left: 24%;
+    top: 12rem;
+    box-shadow: 0px 3px 15px 5px var(--color-red);
+    border: 2px solid var(--color-light-red);
+
+}
+
+.money{
+    height: 50px;
+    width: 255px;
+    position: relative;
+    top: 170px;
+    left: -92px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: var(--color-red);
+    transition: transform .2s;
+    color: white;
+    font-family: 'Be Vietnam Pro';
+    border: 2px solid var(--color-light-red);
+    
+
+}
+
+.money:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 3px 15px 5px var(--color-red);
+}
+
+.blanace-div{
+    width: 260px;
+    height: 55px;
+    background-color: var(--color-red);
+    border: 2px solid var(--color-light-red);
+    position: absolute;
+    top: 395px;
+    left: 22rem;
+    color: white;
+    font-family: 'Be Vietnam Pro';
+    font-size: 24px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+
 }
