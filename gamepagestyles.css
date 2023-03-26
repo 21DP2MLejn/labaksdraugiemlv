@@ -120,3 +120,56 @@ h1{
 .button:hover{
     background-color: #262626;
 }
+
+
+.game{
+    width: 250px;
+    height: 450px;
+    background-color: var(--color-black);
+    position: relative;
+    border-radius: 25px;
+    margin: 20px;
+    margin-left: 42px;
+    margin-right: 20px;
+    display: inline-block;
+    transition: transform .2s;
+    border: none;
+    z-index: 1;
+    left: 460px;
+}
+
+.game:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 3px 15px 5px #4a0000;
+
+}
+
+p{
+    color: white;
+    position: relative;
+    font-family: 'Be Vietnam Pro';
+    font-size: 16px;
+    top: 15px;
+    width: fit-content;
+    transition: transform .2s;
+}
+
+
+p:hover{
+    transform: scale(1.1);
+
+}
+
+.tictactoetext{
+    left: 572px;
+}
+
+.sudokutext{
+    left: 910px;
+    top: -5.5px;
+}
+
+.tetristext{
+    left: 1240px;
+    top: -25px;
+}
