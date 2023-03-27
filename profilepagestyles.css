@@ -18,6 +18,7 @@ body{
 
 h1{
     color: white;
+    text-shadow: var(--color-light-red) 2px 2px;
     font-size: 45px;
     font-family: 'Be Vietnam Pro';
     margin: 20px;
@@ -107,6 +108,8 @@ h1{
     margin-right:auto;
     display:block;
     border-radius: 20px;
+    border: solid 2px var(--color-light-red);
+    box-shadow: 0px 0px 15px 10px #4a0000;
     background-color: var(--color-black);
 }
 
@@ -118,7 +121,7 @@ h1{
     display: inline-block;
     border-radius: 10px;
     border: solid 2px var(--color-light-red);
-    box-shadow: 0px 0px 15px 15px #4a0000;
+    box-shadow: 0px 0px 15px 5px #4a0000;
 }
 
 .profile-pic{
@@ -127,3 +130,47 @@ h1{
     height: 275px;
     width: 275px;
 }
+
+.cuhanilogo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 20px;
+    bottom: 5px;
+}
+
+.info{
+    font-family: 'Be Vietnam Pro';
+    color: white;
+    font-size: 30px;
+    position:absolute;
+    
+}
+
+#surname{
+    top:40px;
+    left: 375px;
+}
+
+#name{
+    top:140px;
+    left: 375px;
+}
+
+#birth{
+    top: 240px;
+    left: 375px;
+}
+
+#country{
+    top: 340px;
+    left: 375px;
+}
+
+#rank{
+    top: 40px;
+    left: 700px;
+}
+
+
+
