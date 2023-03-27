@@ -51,7 +51,8 @@ body {
     justify-items: center;
     border-radius: 25px;
     top: 145px;
-    box-shadow: rgba(121, 121, 121, 0.418) 0px 10px 24px;
+    border: 2px solid #d63838;
+    box-shadow: 0px 0px 15px 5px #4a0000;
 
 }
 
@@ -101,7 +102,7 @@ input[type=email]{
 }
 
 input[type=email]:hover{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 0px 8px 24px #4a0000;
 
 }
 
@@ -125,7 +126,7 @@ input[type=password]{
     padding-left: 20px;
 }
 input[type=password]:hover{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 0px 8px 24px #4a0000;
 
 }
 
@@ -133,18 +134,20 @@ input[type=password]:hover{
 
 
 .but{
-    background-color: var(--color-gray);
+    background-color: var(--color-red);
     position: absolute;
     width: 150px;
     height: 45px;
     z-index: 2;
     top: 440px;
-    border: none;
     font-family: "Be Vietnam Pro";
     font-size: medium;
     color: white;
     border-radius: 20px;
     transition: transform .2s;
+    border: 2px solid #d63838;
+    box-shadow: 0px 0px 15px 5px #4a0000;
+    
 }
 
 
@@ -159,7 +162,7 @@ input[type=password]:hover{
 
 .but:hover{
     transform: scale(1.05);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: #4a0000 0px 8px 24px;
 }
 
 
@@ -189,6 +192,9 @@ input[type=password]:hover{
     line-height: normal;
     z-index: 2;
     opacity: 75%;
+    border-top: 2px solid #d63838;
+    display:flex;
+    box-shadow: 0px 3px 15px 5px #4a0000;
 }
 
 .About{
@@ -225,3 +231,4 @@ input[type=password]:hover{
     width: 55px;
     height: 45px;
 }
+
