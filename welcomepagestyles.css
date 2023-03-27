@@ -1,17 +1,18 @@
 *{
     padding: 0;
     margin: 0;
+    animation: fade-in 0.4s ease-in;
 }
 
 
 :root{
-    --color-light-black: #11100f;
+    --color-light-black: #343434;
     --color-red:#2a0000 ;
+    --color-light-red: #d63838;
     --color-gray: #333333;
     --color-dark-gray: #262626;
-    --color-black: #000000;
+    --color-black: #0A0A0A;
 }
-
 h1 {
     color: white;
     font-size: 5rem;
@@ -28,6 +29,7 @@ h1 {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     z-index: 2;
+    text-shadow: var(--color-light-red) 2px 2px;
 }
 
 body {
@@ -80,6 +82,7 @@ h2{
     font-size: 3rem;
     font-family: 'Be Vietnam Pro';
     position: relative;
+    text-shadow: var(--color-light-red) 2px 2px;
 
 }
 
@@ -88,6 +91,7 @@ p{
     font-size: 2rem;
     font-family: 'Be Vietnam Pro';
     position: relative;
+    
 }
 
 .but{
@@ -96,13 +100,14 @@ p{
     width: 150px;
     height: 45px;
     z-index: 2;
-    border: none;
+    border: 2px solid var(--color-light-red);
     font-family: "Be Vietnam Pro";
     font-size: medium;
     color: white;
     border-radius: 20px;
     margin-left: 20px;
     transition: transform .2s;
+    background-color: var(--color-red);
 }
 
 .signup{
@@ -118,34 +123,58 @@ p{
 
 .but:hover{
     transform: scale(1.05);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 0px 3px 15px 5px #4a0000;
 }
 
 
 .slide-in{
     position: absolute;
-    width: 100px;
+    width: 20px;
     height: 100%;
-    left: 960px;
-    top: 0;
     background-color: var(--color-red);
-    transform: skewX(295.9deg);
     display: flex;
     z-index: 1;
+    border: 2px solid var(--color-light-red);
+    box-shadow: 0px 3px 15px 5px #4a0000;
+    overflow: hidden;
+    
+}
+
+.csgo{
     animation: sliding 0.55s ease-in-out;
+    transform: skewX(225.5deg);
+    left: 450px;
+    top: 0;
+
+
+}
+
+.valo{
+    animation: sliding-2 0.55s ease-in-out;
+    transform: skewX(-225.5deg);
+    left: 1420px;
+    top: 0;
 }
 
 @keyframes sliding {
     0%{
-        transform: skew(295.9deg) translateY(-1200px);
+        transform: skew(225.5deg) translateY(-1200px);
     }
     100%{
-        transform: skew(295.9deg);
+        transform: skew(225.5deg);
     }
     
 }
 
-
+@keyframes sliding-2 {
+    0%{
+        transform: skew(-225.5deg) translateY(-1200px);
+    }
+    100%{
+        transform: skew(-225.5deg);
+    }
+    
+}
 
 
 @keyframes fade-in {
@@ -162,3 +191,38 @@ p{
     }
 
 }
+
+
+.image-triangle-1{
+    width: 1000px ;
+    height: 1000px;
+    transform: rotate(360deg);
+    opacity: 25%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background: url(images/csgoimg.png);
+    clip-path: polygon(100% 0% , 0% 100%, 100% 100%);
+    background-size: auto;
+    transform: scaleX(-1);
+}
+
+
+
+.image-triangle-2{
+    width: 970px ;
+    height: 1000px;
+    clip-path: polygon(100% 5% , 0% 100%, 100% 100%);
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: url(images/valorantimg.jpg) ;
+    opacity: 25%;
+    background-size: auto;
+}
+
