@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color-light-black: #343434;
+    --color-red:#2a0000 ;
+    --color-light-red: #d63838;
+    --color-gray: #333333;
+    --color-dark-gray: #262626;
+    --color-black: #0A0A0A;
+}
+
+
+body{
+    background-color: var(--color-dark-gray);
+    color: white;
+    font-family: 'Be Vietnam Pro';
+    
+}
+
+
+
+h1{
+    font-size: 48px;
+}
+
+
+h2{
+    margin: 20px;
+    font-size: 36px;
+}
+
+p{
+    font-size: 24px;
+    width: 850px;
+    margin: 20px;    
+}
+
+.cuhani-greetings{
+    display: grid;
+    place-items: center;
+    margin: 50px;
+    margin-bottom: 75px;
+    overflow: hidden;
+}
+
+.about-cuhani{
+    width: 100%;
+    height: 425px ;
+    background-color: var(--color-light-red);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.goals-cuhani{
+
+    width: 100%;
+    height: 425px ;
+    background-color: var(--color-dark-gray);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.why-cuhani{
+
+    width: 100%;
+    height: 425px ;
+    background-color: var(--color-light-red);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    overflow: auto;
+
+}
