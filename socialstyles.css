@@ -120,3 +120,76 @@ h1{
 .button:hover{
     background-color: #262626;
 }
+
+.search-box{
+    width: 500px;
+    background: var(--color-light-red);
+    margin: 50px auto 0;
+    border-radius: 9px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+input{
+    flex: 1;
+    height: 45px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: white;
+}
+
+#searchbut{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+#searchbut .fa-sharp{
+    width: 25px;
+    font-size:large;
+}
+
+::placeholder{
+    color:white;
+}
+
+.resultbox ul{
+    border-top: 1px solid var(--color-black);
+    padding :15px 10px;
+}
+
+.resultbox ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.resultbox ul li:hover{
+    background-color: var(--color-red);
+}
+
+.resultbox{
+    max-height: 300px;
+    
+}
+
+.social-container{
+    position: relative;
+    top: 100px;
+    width: 75%;
+    height: 900px;
+    margin-left: auto;
+    margin-right:auto;
+    display:flex;
+    border-radius: 5px;
+    border: solid 2px var(--color-light-red);
+    box-shadow: 0px 0px 15px 10px #4a0000;
+    background-color: var(--color-black);
+}
