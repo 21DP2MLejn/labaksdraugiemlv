@@ -131,6 +131,29 @@ h1{
     width: 275px;
 }
 
+.save-but{
+    position: relative;
+    width: 150px;
+    height: 45px;
+    z-index: 2;
+    border: 2px solid var(--color-light-red);
+    font-family: "Be Vietnam Pro";
+    font-size: medium;
+    color: white;
+    border-radius: 20px;
+    margin-left: 20px;
+    transition: transform .2s;
+    background-color: var(--color-red);
+    top: 20px;
+    left: 45px;
+}
+
+.save-but:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 3px 15px 5px #4a0000;
+}
+
+
 .cuhanilogo{
     position: absolute;
     width: 100px;
@@ -139,9 +162,7 @@ h1{
     bottom: 5px;
 }
 
-
-
-.info{
+.info-headers{
     font-family: 'Be Vietnam Pro';
     color: white;
     font-size: 30px;
@@ -149,51 +170,201 @@ h1{
     
 }
 
-#surname{
+#nick-h{
     top:40px;
     left: 375px;
 }
 
-#name{
+#name-h{
     top:140px;
     left: 375px;
 }
 
-#birth{
+#birth-h{
     top: 240px;
     left: 375px;
 }
 
-#country{
+#country-h{
     top: 340px;
     left: 375px;
 }
 
-#rank{
+#rank-h{
     top: 40px;
-    left: 700px;
+    left: 750px;
 }
 
-.surname-square{
+#edit-nick{
     position: absolute;
     z-index: 2;
-    top: 330px;
-    left: 115px;
+    top: 85px;
+    left: 375px;
+    width: 17%; 
+    display: none;  
+}
+
+#edit-name{
+    position: absolute;
+    z-index: 2;
+    top: 185px;
+    left: 375px;
+    width: 17%; 
+    display: none;  
+}
+
+#edit-bday{
+    position: absolute;
+    z-index: 2;
+    top: 285px;
+    left: 375px;
+    width: 17%; 
+    background-color: #262626;
+    border: none;
+    height: 50px;
+    color: white;
+    border-radius: 15px;
+    font-family: "Be Vietnam Pro";
+    font-size: medium;
+    padding-left: 20px; 
+    display: none; 
+}
+
+#edit-bday:hover{
+    box-shadow: 0px 0px 10px 5px #4a0000;
+}
+
+#country{
+    position: absolute;
+    z-index: 2;
+    top: 385px;
+    left: 375px;
+    width: 17%; 
+    background-color: #262626;
+    border: none;
+    height: 50px;
+    color: white;
+    border-radius: 15px;
+    font-family: "Be Vietnam Pro";
+    font-size: medium;
+    padding-left: 20px; 
+    display: block;
+    pointer-events: disabled;
+}
+
+#country:hover{
+    box-shadow: 0px 0px 10px 5px #4a0000;
 }
 
 input[type = text]{
     background-color: #262626;
     border: none;
-    width: 275px;
+    width: 250px;
     height: 50px;
     color: white;
-    border-radius: 20px;
+    border-radius: 15px;
     font-family: "Be Vietnam Pro";
     font-size: medium;
     padding-left: 20px;
 }
 
 input[type = text]:hover{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 0px 0px 10px 5px #4a0000;
+}
 
+.hide{
+    display: none;
+}
+  
+.show{
+    display: block;
+}
+
+.edit-but{
+    position: absolute;
+    padding-left: 2px;
+    padding-top: 2px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--color-gray)
+}
+
+
+#edit-nick-but{
+    left:650px;
+    top:87px;
+}
+
+#acc-nick-but{
+    left:650px;
+    top:87px;
+    display: none;
+}
+
+#acc-nick-but:hover{
+    box-shadow: 0px 0px 10px 5px #4a0000;
+}
+#edit-nick-but:hover{
+    box-shadow: 0px 0px 10px 5px #4a0000;
+}
+
+#edit-name-but{
+    left:650px;
+    top:187px;
+}
+
+#acc-name-but{
+    left:650px;
+    top:187px;
+    display: none;
+}
+
+#acc-name-but:hover{
+    box-shadow: 0px 0px 10px 5px #4a0000;
+}
+#edit-name-but:hover{
+    box-shadow: 0px 0px 10px 5px #4a0000;
+}
+
+#edit-bday-but{
+    left:650px;
+    top:287px;
+}
+
+#acc-bday-but{
+    left:650px;
+    top:287px;
+    display: none;
+}
+
+#acc-bday-but:hover{
+    box-shadow: 0px 0px 10px 5px #4a0000;
+}
+#edit-bday-but:hover{
+    box-shadow: 0px 0px 10px 5px #4a0000;
+}
+
+#edit-country-but{
+    left:650px;
+    top:287px;
+}
+
+#acc-country-but{
+    left:650px;
+    top:287px;
+    display: none;
+}
+
+#acc-country-but:hover{
+    box-shadow: 0px 0px 10px 5px #4a0000;
+}
+#edit-country-but:hover{
+    box-shadow: 0px 0px 10px 5px #4a0000;
+}
+
+.edit-pic{
+    width: 30px;
+    height: 30px; 
 }

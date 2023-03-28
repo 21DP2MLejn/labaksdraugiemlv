@@ -173,7 +173,6 @@ h1{
 }
 
 .edit-but{
-    background-color: var(--color-gray);
     position: relative;
     width: 150px;
     height: 45px;
