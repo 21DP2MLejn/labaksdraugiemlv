@@ -64,15 +64,15 @@ body {
 
 .get-started{
     position: absolute;
-    top: 300px;
-    left: 100px;
+    top: 250px;
+    left: 575px;
     z-index: 2;
 }
 
 .already-registered{
     position: absolute;
-    left: 1250px;
-    top: 600px;
+    left: 675px;
+    top: 500px;
     z-index: 2;
 
 }
@@ -111,14 +111,13 @@ p{
 }
 
 .signup{
-    top: 350px;
-    left: 350px;
-
+    top: 280px;
+    left: 850px;
 }
 
 .login{
-    left: 1255px;
-    top: 650px;
+    left: 675px;
+    top: 550px;
 }
 
 .but:hover{
@@ -128,7 +127,7 @@ p{
 
 
 .slide-in{
-    position: absolute;
+    position: fixed;
     width: 20px;
     height: 100%;
     background-color: var(--color-red);
@@ -208,6 +207,7 @@ p{
     clip-path: polygon(100% 0% , 0% 100%, 100% 100%);
     background-size: auto;
     transform: scaleX(-1);
+    display: flex;
 }
 
 
@@ -224,5 +224,6 @@ p{
     background: url(images/valorantimg.jpg) ;
     opacity: 25%;
     background-size: auto;
+    display: flex;
 }
 
