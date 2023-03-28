@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="editprofilepagestyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+    <script src="menuslider.js"></script>
+    <script src="editinfo.js"></script>
+    <title>Cuhani.lv/profile</title>
+</head>
+<body>
+    <container>
+    <div class="header">
+        <button id="menbut" onclick="openmenu()" class="menubutton"><img src="images\menubutton.png" class="menubuttonimage"></button>
+        <div class="cuhanilogotextdiv">
+            <img src="images\cuhanilogotext.png" alt="Cuhani Logo Text" class="cuhanilogotext">
+        </div>
+    </div>
+    </container>
+    
+    <div id="sidebar" class="menuslider">
+        <div class="home">
+            <a href="homepage.html">
+                <button class="button">Home</button>
+            </a>
+        </div>
+        <div class="social">
+            <a href="social.html">
+                <button class="button">Social</button>
+            </a>
+        </div>
+        <div class="games">
+            <a href="gamepage.html">
+                <button class="button">Games</button>
+            </a>
+        </div>
+        <div class="wallet">
+            <a href="walletpage.html">
+                <button class="button">Wallet</button>
+            </a>
+        </div>
+        <div class="log-out">
+            <a href="login.html">
+                <button class="button">Log Out</button>
+            </a>
+        </div>
+    </div>
+
+    <h1>EDIT PROFILE</h1>
+    <div class="profile-container">
+        <div class="profile-pic-box">
+            <img src="images\defaultpfp.png" alt="profile picture" class="profile-pic">
+            <a href="profilepage.html">
+                <button class="save-but">
+                    Save changes
+                </button>
+            </a>
+            <p class="info-headers" id="nick-h">Nickname:</p>
+            <input type="text" name="nickname" placeholder="Nickname" id="edit-nick">
+            <button type="button" class="edit-but" id="edit-nick-but" onclick="editnickbox()">
+                <img src="images\edit.png" alt="edit" class="edit-pic">
+            </button>
+            <button type="button" class="edit-but" id="acc-nick-but" onclick="editnickbox()">
+                <img src="images\accept.png" alt="edit" class="edit-pic">
+            </button>
+
+            <p class="info-headers" id="name-h">Name:</p>
+            <input type="text" name="name" placeholder="Name" id="edit-name">
+            <button type="button" class="edit-but" id="edit-name-but" onclick="editnamebox()">
+                <img src="images\edit.png" alt="edit" class="edit-pic">
+            </button>
+            <button type="button" class="edit-but" id="acc-name-but" onclick="editnamebox()">
+                <img src="images\accept.png" alt="edit" class="edit-pic">
+            </button>
+
+            <p class="info-headers" id="birth-h">Date of birth:</p>
+            <input type="date" name="birth" id="edit-bday" value="28-03-2023" min="01-01-1900" max="01-01-2023">
+            <button type="button" class="edit-but" id="edit-bday-but" onclick="editbdaybox()">
+                <img src="images\edit.png" alt="edit" class="edit-pic">
+            </button>
+            <button type="button" class="edit-but" id="acc-bday-but" onclick="editbdaybox()">
+                <img src="images\accept.png" alt="edit" class="edit-pic">
+            </button>
+
+            <p class="info-headers" id="country-h">Country:</p>
+            <select name="countries" id="country">
+                <option value="Latvia">Latvia</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Finland">Finland</option>
+                <option value="Poland">Poland</option>
+                <option value="Germany">Germany</option>
+            </select>
+            <button type="button" class="edit-but" id="edit-country-but" onclick="editcountrybox()">
+                <img src="images\edit.png" alt="edit" class="edit-pic">
+            </button>
+            <button type="button" class="edit-but" id="acc-country-but" onclick="editcountrybox()">
+                <img src="images\accept.png" alt="edit" class="edit-pic">
+            </button>
+
+            <p class="info-headers" id="rank-h">Rank:</p>
+            <img src="images\cuhanilogo.png" alt="Cuhani Logo" class="cuhanilogo">
+        </div>
+    </div>
+</body>
+</html>
