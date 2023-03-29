@@ -1,6 +1,7 @@
 let availableKeywords = [
     "Guapo",
-    'NIGGERS',
+    'BLAAR',
+    `Negis`,
   
 ];
 
