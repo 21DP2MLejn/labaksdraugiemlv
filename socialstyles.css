@@ -24,7 +24,7 @@ h1{
     font-family: 'Be Vietnam Pro';
     margin: 20px;
     display: flex;
-    position: absolute;
+    position: relative;
     left: 300px;
     width: 350px;
 }
