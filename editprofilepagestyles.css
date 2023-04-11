@@ -240,6 +240,10 @@ h1{
     top: 385px;
     left: 375px;
     width: 17%; 
+    display: none;
+}
+
+select{
     background-color: #262626;
     border: none;
     height: 50px;
@@ -248,8 +252,7 @@ h1{
     font-family: "Be Vietnam Pro";
     font-size: medium;
     padding-left: 20px; 
-    display: block;
-    pointer-events: disabled;
+    
 }
 
 #country:hover{
@@ -348,12 +351,12 @@ input[type = text]:hover{
 
 #edit-country-but{
     left:650px;
-    top:287px;
+    top:387px;
 }
 
 #acc-country-but{
     left:650px;
-    top:287px;
+    top:387px;
     display: none;
 }
 
