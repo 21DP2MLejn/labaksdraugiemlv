@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -17,16 +18,14 @@ body{
 }
 
 h1{
-    top: 75px;
     color: white;
-    text-shadow: var(--color-light-red) 2px 2px;
     font-size: 45px;
     font-family: 'Be Vietnam Pro';
     margin: 20px;
     display: flex;
     position: relative;
     left: 300px;
-    width: 350px;
+    width: 300px;
 }
 
 
@@ -107,79 +106,6 @@ h1{
     transform: scale(1.1);
 }
 
-.button{
-    height: 100px;
-    width: 100%;
-    position: relative;
-    color: white;
-    background-color: #0A0A0A;
-    padding: 10px;
-    text-align: left;
-    border: none;
-    font-family: 'Be Vietnam Pro';
-}
-
-.button:hover{
-    background-color: #262626;
-}
-
-.search-box{
-    width: 500px;
-    background: var(--color-light-red);
-    margin: 25px auto 0;
-    border-radius: 9px;
-}
-
-.row{
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-input{
-    flex: 1;
-    height: 45px;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    color: white;
-}
-
-#searchbut{
-    background: transparent;
-    border: 0;
-    outline: 0;
-}
-
-#searchbut .fa-sharp{
-    width: 25px;
-    font-size:large;
-}
-
-::placeholder{
-    color:white;
-}
-
-.resultbox ul{
-    border-top: 1px solid var(--color-black);
-    padding :15px 10px;
-}
-
-.resultbox ul li{
-    list-style: none;
-    border-radius: 3px;
-    padding: 15px 10px;
-    cursor: pointer;
-}
-
-.resultbox ul li:hover{
-    background-color: var(--color-red);
-}
-
-.resultbox{
-    max-height: 300px;
-    
-}
 
 .social-container{
     position: relative;
@@ -201,7 +127,7 @@ input{
 }
 
 .friendcard{
-    width: 400px;
+    width: 525px;
     height: 200px;
     background-color: var(--color-light-red);
     position: relative;
@@ -247,3 +173,84 @@ input{
     top: 30px;
     left: 105px;
 }
+
+::selection{
+    background-color: var(--color-light-red);
+    background: #000;
+  }
+  
+  .wrapper{
+    max-width: 450px;
+    margin: 150px auto;
+  }
+  
+  .wrapper .search-input{
+    background: var(--color-light-red);
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  }
+  
+  .search-input input{
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .search-input.active input{
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .search-input .autocom-box{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  
+  .search-input.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .search-input.active .autocom-box li{
+    display: block;
+  }
+  .autocom-box li:hover{
+    background: var(--color-light-red);
+  }
+  
+  .search-input .icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  input {
+    background-color: var(--color-light-red);
+    
+  }
