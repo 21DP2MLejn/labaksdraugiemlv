@@ -1,10 +1,9 @@
 function openmenu() {
-
-    var x = document.getElementById("sidebar");
-    
-    if (x.style.display === "none") {
+  var x = document.getElementById("sidebar");
+  var computedStyle = window.getComputedStyle(x);
+  if (computedStyle.display === "none") {
       x.style.display = "block";
-    } else {
+  } else {
       x.style.display = "none";
-    }
   }
+}
