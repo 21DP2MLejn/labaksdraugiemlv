@@ -69,14 +69,14 @@ body {
 
 }
 
-.forgottext{
+.resettext{
     color: #FFFFFF;
     position: absolute;
     font-size: 40px;
     font-family: 'Be Vietnam Pro';
     z-index: 2;
     top: 125px;
-    left: 100px;
+    left: 120px;
 }
 
 #message{
@@ -90,17 +90,27 @@ body {
     width: 325px;
 }
 
-.emailsquare{
+.newpass{
     position: absolute;
     width: 55px;
     height: 60px;
     z-index: 2;
-    top: 325px;
+    top: 230px;
     left: 115px;
 
 }
 
-input[type=email]{
+.confirmpass{
+    position: absolute;
+    width: 55px;
+    height: 60px;
+    z-index: 2;
+    top: 330px;
+    left: 115px;
+
+}
+
+input[type=password]{
     background-color: #262626;
     border: none;
     width: 300px;
@@ -112,7 +122,7 @@ input[type=email]{
     font-size: medium;
 }
 
-input[type=email]:hover{
+input[type=password]:hover{
     box-shadow: 0px 8px 24px #4a0000;
 
 }
@@ -136,7 +146,7 @@ input[type=email]:hover{
 }
 
 
-.continue{
+.login{
     left: 200px;
 }
 
@@ -145,21 +155,6 @@ input[type=email]:hover{
     box-shadow: #4a0000 0px 8px 24px;
 }
 
-
-.forgot{
-    width: 125px;
-    height: 100px;
-    top: 520px;
-    left: 217px;
-    position: absolute;
-    font-size: small;
-    vertical-align: middle;
-    line-height: 15px;
-    color: white;
-    display: flex;   
-    font-family: 'Be Vietnam Pro';
-
-}
 
 
 
