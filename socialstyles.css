@@ -40,72 +40,71 @@ h1{
 }
 
 .profilepicbut{
-    display: inline-block;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    vertical-align: top;
-    width: 60px;
-    height: 60px;
-    right: 5px;
-    border: 0;
-    background-color: transparent;
-    
+  display: inline-block;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  width: 60px;
+  height: 60px;
+  right: 5px;
+  border: 0;
+  background-color: transparent;
+  
 }
 
 .profilepic{
-    display: block;
-    width: 45px;
-    height: 45px;
+  display: block;
+  width: 45px;
+  height: 45px;
 }
 .profilepic:hover{
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .cuhanilogotextdiv{
-    position: relative;
-    padding: 0;
-    width:180px;
-    height: auto;
-    margin: auto;
-    display: inline-block;
+  position: relative;
+  padding: 0;
+  width:180px;
+  height: auto;
+  margin: auto;
+  display: inline-block;
 }
 
 .cuhanilogotext{
-    height: 58px;
-    width: 180px;
+  height: 58px;
+  width: 180px;
 }
 
 .menubutton{
-    background-color: transparent;
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    top: 6px;
-    left: 10px;
-    padding: 0;
-    border: 0;
-    display:flex
+  background-color: transparent;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 6px;
+  left: 10px;
+  padding: 0;
+  border: 0;
+  display:flex
 }
 
 .menubuttonimage{
-    height: 45px;
-    width: 45px; 
+  height: 45px;
+  width: 45px; 
 }
 
 .menuslider{
-    background-color: var(--color-black);
-    position: absolute;
-    height: 93%;
-    width: 300px;
-    display: none;
-    z-index: 2;
+  background-color: var(--color-black);
+  position: absolute;
+  height: 93%;
+  width: 300px;
+  display: none;
+  z-index: 2;
 }
 
 .menubutton:hover{
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 
 .social-container{
     position: relative;
