@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
     <script src="menuslider.js"></script>
     <script src="snakegamescript.js"></script>
+    <script src="restartbut.js"></script>
     <title>Cuhani.lv/games/snake</title>
 </head>
 <body>
@@ -50,14 +51,17 @@
         </div>
     </div>
     <h1>Snake Game</h1>
+    <p id="scoretext">Score: <span id="score"></span></p>
     <div class="gamecontainer">
+        
         <canvas id="board"></canvas>
         <div id="end">
-            <button id="restartbut">
+            <p id="endscoretext">Your score: <span id="endscore"></span></p>
+            <button id="restartbut" onclick="restart()">
                 <img id="restartpic" src="images/restart.png">
             </button>
         </div> 
-        <p id="scoretext">Score: <span id="score"></span></p>
+        
     </div>
 </body>
 </html>

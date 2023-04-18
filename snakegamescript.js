@@ -43,6 +43,7 @@ window.onload = function () {
 function update() {
     if (gameOver) {
         end.style.display = "block";
+        document.getElementById("endscore").innerHTML = score;
         document.getElementById("score").style.display = "none";
         document.getElementById("scoretext").style.display = "none";
         return; 
