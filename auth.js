@@ -116,8 +116,6 @@ document.getElementById("register-password").addEventListener('keypress', functi
     }).catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      document.getElementById("result-box").style.display="inline";
-      document.getElementById("register-div").style.display="none";
       alert("Sorry !\n" + errorMessage);
     });
   }
