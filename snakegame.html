@@ -3,12 +3,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="gamepagestyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="snakegamestyles.css">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
     <script src="menuslider.js"></script>
-    <title>Cuhani.lv/Games</title>
+    <script src="snakegamescript.js"></script>
+    <script src="restartbut.js"></script>
+    <title>Cuhani.lv/games/snake</title>
 </head>
-
 <body>
     <container>
     <div class="header">
@@ -21,8 +23,6 @@
         </a>
     </div>
     </container>
-
-    
     <div id="sidebar" class="menuslider">
         <div class="home">
             <a href="homepage.html">
@@ -50,33 +50,18 @@
             </a>
         </div>
     </div>
-
-
-    <h1>GAMES</h1>
-
-
-        <button class="tictactoe game">
-
-        </button>
-
-
-
-        <button class="sudoku game">
-            
-        </button>
-
-
-        <a href="snakegame.html">
-            <button class="snake game">
-
+    <h1>Snake Game</h1>
+    <p id="scoretext">Score: <span id="score"></span></p>
+    <div class="gamecontainer">
+        
+        <canvas id="board"></canvas>
+        <div id="end">
+            <p id="endscoretext">Your score: <span id="endscore"></span></p>
+            <button id="restartbut" onclick="restart()">
+                <img id="restartpic" src="images/restart.png">
             </button>
-        </a>
-
-    <p class="tictactoetext">Tic-Tac-Toe</p>
-    <p class="sudokutext">Sudoku</p>
-    <p class="snaketext">Snake</p>
-
-
-
+        </div> 
+        
+    </div>
 </body>
 </html>
