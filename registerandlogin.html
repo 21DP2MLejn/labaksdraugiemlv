@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firebase form auth</title>
+    <link rel="stylesheet" href="registerandlogin.css">
+    <script type="module" src="auth.js"></script>
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <container class="parent">
+        <div class="square" id="login-div">
+        <h1 class="cuhanitext"> Cuhani </h1>
+        <p class="signintext">Sign In</p>
+        <form class="emailsquare">
+            <input type="email" id="login-email" class="text-field" name="login-email" placeholder="Email" required/><br>
+        </form>
+        <form class="passwordsquare">
+            <input type="password" id="login-password" class="text-field" name="login-password" placeholder="Password" required/><br>
+        </form>
+        <button id="login-btn" class="btn-style">Login</button><br>
+        <button id="reg-btn" class="an-btn">don't have an account? REGISTER</button>
+    </div>
+
+    <div class="square" id="register-div">
+        <h2>Register</h2>
+        <p class="registertext">Create an account</p>
+        <h1 class="cuhanitext">Cuhani</h1>
+        <form class="emailsquare">
+            <input type="email" id="register-email" class="text-field" name="register-email" placeholder="Email" required/><br>
+        </form>
+        <form class="passwordsquare">
+        <input type="password" id="register-password" class="text-field" name="register-password" placeholder="Password" required/><br>
+        </form>
+        <button id="register-btn" class="btn-style">Register</button><br>
+        <button id="log-btn" class="an-btn">LOGIN</button>
+    </div>
+
+    <div id="result-box">
+    <h3 id="result"></h3><br>
+        <button id="log-out-btn" class="btn-style">LOG OUT</button>
+    </div>
+</container>
+
+<container>
+    <div class="footer">
+        
+        <a class="About footerstyle" href="aboutus.html"> About Us </a>
+        
+        <a class="Contact footerstyle" href="about.html"> Contact Us </a>
+        
+        <div class="cuhanilogodiv">
+            <img src="images\cuhanilogo.png" alt="Cuhani Logo Text" class="cuhanilogo">
+        </div>
+    
+    </div>
+</container>
+
+  </body>
+  </html>
