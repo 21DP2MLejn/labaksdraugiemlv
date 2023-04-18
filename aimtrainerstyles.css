@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+}
+
+body{
+    background-color: black;
+}
+
+#block{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border: none;
+}
+
+#scoreCard{
+    height: 30px;
+    width: 125px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    box-sizing: border-box;
+    
+}
+
+#gameEnd{
+    width: 700px;
+    height: 500px;
+    background-color: red;
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
