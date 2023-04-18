@@ -18,7 +18,7 @@
  const auth = getAuth(app);
 
 
-  document.getElementById("reg-btn").addEventListener('click', function(){
+  document.getElementById("reg-btn").addEventListener('click',  function(){
    document.getElementById("register-div").style.display="inline";
    document.getElementById("login-div").style.display="none";
 });
@@ -29,26 +29,34 @@ document.getElementById("log-btn").addEventListener('click', function(){
 
 });
 
-  document.getElementById("login-btn").addEventListener('click', function(){
-   const loginEmail= document.getElementById("login-email").value;
-   const loginPassword =document.getElementById("login-password").value;
-
-   signInWithEmailAndPassword(auth, loginEmail, loginPassword)
-  .then((userCredential) => {
-    const user = userCredential.user;
-    document.getElementById("result-box").style.display="inline";
-     document.getElementById("login-div").style.display="none";
-     document.getElementById("result").innerHTML="Welcome Back<br>"+loginEmail+" was Login Successfully";
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    document.getElementById("result-box").style.display="inline";
-     document.getElementById("login-div").style.display="none";
-     document.getElementById("result").innerHTML="Sorry ! <br>"+errorMessage;
-
-  });
+document.getElementById("login-btn").addEventListener('click', function(){
+  login();
 });
+
+document.getElementById("login-password").addEventListener('keydown', function(event){
+ if (event.key === "Enter") {
+   event.preventDefault();
+   login();
+ }
+});
+
+function login() {
+ const loginEmail = document.getElementById("login-email").value;
+ const loginPassword = document.getElementById("login-password").value;
+
+ signInWithEmailAndPassword(auth, loginEmail, loginPassword)
+   .then((userCredential) => {
+     const user = userCredential.user;
+     document.getElementById("result-box").style.display="inline";
+     document.getElementById("login-div").style.display="none";
+     location.href = "homepage.html";
+   })
+   .catch((error) => {
+     const errorCode = error.code;
+     const errorMessage = error.message;
+     alert("Sorry !\n" + errorMessage);
+   });
+}
 
 
   document.getElementById("register-btn").addEventListener('click', function(){
@@ -59,15 +67,11 @@ document.getElementById("log-btn").addEventListener('click', function(){
    createUserWithEmailAndPassword(auth, registerEmail, registerPassword)
   .then((userCredential) => {
     const user = userCredential.user;
-    document.getElementById("result-box").style.display="inline";
-     document.getElementById("register-div").style.display="none";
-     document.getElementById("result").innerHTML="Welcome <br>"+registerEmail+" was Registered Successfully";
+    alert("User registered successfully!");
   }).catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    document.getElementById("result-box").style.display="inline";
-     document.getElementById("register-div").style.display="none";
-     document.getElementById("result").innerHTML="Sorry ! <br>"+errorMessage;
+     alert("Sorry !\n" + errorMessage);
 
   });
 });
@@ -82,3 +86,62 @@ document.getElementById("log-out-btn").addEventListener('click', function(){
   });
 
 });
+
+document.getElementById("register-email").addEventListener('keypress', function(e){
+  if (e.key === "Enter"){
+    e.preventDefault(); // Prevents the form from submitting or page from refreshing
+    const registerEmail= document.getElementById("register-email").value;
+    const registerPassword =document.getElementById("register-password").value;
+    createUserWithEmailAndPassword(auth, registerEmail, registerPassword)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      alert("User registered successfully!");
+    }).catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert("Sorry !\n" + errorMessage);
+    });
+  }
+});
+
+document.getElementById("register-password").addEventListener('keypress', function(e){
+  if (e.key === "Enter"){
+    e.preventDefault(); // Prevents the form from submitting or page from refreshing
+    const registerEmail= document.getElementById("register-email").value;
+    const registerPassword =document.getElementById("register-password").value;
+    createUserWithEmailAndPassword(auth, registerEmail, registerPassword)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      alert("User registered successfully!");
+    }).catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      document.getElementById("result-box").style.display="inline";
+      document.getElementById("register-div").style.display="none";
+      alert("Sorry !\n" + errorMessage);
+    });
+  }
+});
+
+
+document.getElementById("register-email").addEventListener('keypress', function(e){
+  if (document.getElementById("register-email").value == null ){
+    document.getElementById("register-email").style.borderColor = "red";
+  
+  }else{
+    createUserWithEmailAndPassword();
+  }
+  
+  
+});
+
+document.getElementById("register-password").addEventListener('keypress', function(e){
+  if (document.getElementById("register-password").value == null ){
+    document.getElementById("register-password").style.borderColor = "red";
+  
+  }else{
+    createUserWithEmailAndPassword();
+  }
+  
+  
+})
