@@ -17,7 +17,7 @@ var foodX;
 var foodY;
 
 var score = 0;
- 
+
 var gameOver = false;
 
 var endscreen;
@@ -29,8 +29,6 @@ window.onload = function () {
     board.width = columns * blockSize;
     context = board.getContext("2d");
 
-   
- 
     placeFood();
     showScore();
     document.addEventListener("keyup", changeDirection);  //for movements
@@ -48,6 +46,7 @@ function update() {
         document.getElementById("scoretext").style.display = "none";
         return; 
     }
+
     showScore();
     // Background of the Game
     context.fillStyle = "#262626";
@@ -138,5 +137,6 @@ function placeFood() {
 function showScore(){
     document.getElementById("score").innerHTML = score;
 }
+
 
 
