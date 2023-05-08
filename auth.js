@@ -1,7 +1,7 @@
 
  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
- import { getAuth, signInWithEmailAndPassword,  createUserWithEmailAndPassword, signOut  } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
+ import { getAuth, signInWithEmailAndPassword,  createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
 
 
 
@@ -22,10 +22,7 @@
 
 
 
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
+ window.onload = function() {
   document.getElementById("reg-btn").addEventListener('click',  function(){
     document.getElementById("register-div").style.display="inline";
     document.getElementById("login-div").style.display="none";
@@ -88,16 +85,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-  document.getElementById("log-out-btn").addEventListener('click', function(){
-    signOut(auth).then(() => {
-      document.getElementById("result-box").style.display="none";
-        document.getElementById("login-div").style.display="inline";
-    }).catch((error) => {
-      document.getElementById("result").innerHTML="Sorry ! <br>"+errorMessage;
-    });
-
-  });
-
   document.getElementById("register-email").addEventListener('keypress', function(e){
     if (e.key === "Enter"){
       e.preventDefault(); // Prevents the form from submitting or page from refreshing
@@ -133,22 +120,5 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-  document.getElementById("register-email").addEventListener('keypress', function(e){
-    if (document.getElementById("register-email").value == null ){
-      document.getElementById("register-email").style.borderColor = "red";
-    
-    }else{
-      createUserWithEmailAndPassword();
-    }
-  });
 
-  document.getElementById("register-password").addEventListener('keypress', function(e){
-    if (document.getElementById("register-password").value == null ){
-      document.getElementById("register-password").style.borderColor = "red";
-    
-    }else{
-      createUserWithEmailAndPassword();
-    }
-  })
-
-});
+};
