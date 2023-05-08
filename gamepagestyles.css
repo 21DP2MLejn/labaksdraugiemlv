@@ -174,11 +174,23 @@ p:hover{
     top: -25px;
 }
 
+#aimtrainerpic{
+    width: 250px;
+    height: 450px;
+    border-radius: 25px;
+    filter: grayscale(60%) brightness(60%);
+}
+
+#aimtrainerpic:hover{
+    filter: grayscale(0%) brightness(80%) ;
+    
+}
+
 #snakepic{
     width: 250px;
     height: 450px;
     border-radius: 25px;
-    filter: grayscale(90%) brightness(50%);
+    filter: grayscale(60%) brightness(60%);
 }
 
 #snakepic:hover{
