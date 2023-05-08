@@ -125,7 +125,7 @@ h1{
 .game{
     width: 250px;
     height: 450px;
-    background-color: var(--color-black);
+    background-color: #0A0A0A;
     position: relative;
     border-radius: 25px;
     margin: 20px;
@@ -172,4 +172,16 @@ p:hover{
 .snaketext{
     left: 1240px;
     top: -25px;
+}
+
+#snakepic{
+    width: 250px;
+    height: 450px;
+    border-radius: 25px;
+    filter: grayscale(90%) brightness(50%);
+}
+
+#snakepic:hover{
+    filter: grayscale(0%) brightness(80%) ;
+    
 }
