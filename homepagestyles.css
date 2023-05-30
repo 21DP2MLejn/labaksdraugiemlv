@@ -135,7 +135,6 @@ h1{
 
 }
 
-
 .card{
     width: 250px;
     height: 450px;
@@ -147,12 +146,60 @@ h1{
     margin-right: 20px;
     display: inline-block;
     transition: transform .2s;
+    overflow: hidden;
 }
 
 .card:hover{
     transform: scale(1.1);
     box-shadow: 0px 3px 15px 5px #4a0000;
 
+}
+
+.card:hover .volume-control {
+    display: block;
+}
+
+.video {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video:hover {
+    filter: brightness(70%); 
+}
+
+.volume-control {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 80px;
+    z-index: 1;
+}
+
+.upload-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+}
+
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.uploadedVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .button{
