@@ -29,19 +29,42 @@ body{
     text-align: center;
     z-index: 2;
     box-sizing: border-box;
+    font-size: 20px;
     
 }
 
-#gameEnd{
-    width: 700px;
-    height: 500px;
+#restart{
+
+    width: 200px;
+    height: 100px;
     background-color: red;
+    display: none;
     position: absolute;
-    color: white;
-    text-align: center;
-    font-size: 36px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
+    z-index: 50;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+#restart:hover{
+    background-color: rgb(37, 3, 3);
+}
+
+#timer{
+
+    height: 30px;
+    width: 125px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    box-sizing: border-box;
+    font-size: 20px;
+    right: 0;
+    top: 0;
+
 }
