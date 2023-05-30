@@ -70,4 +70,22 @@ function editcountrybox(){
     }
 }
 
+function saveChanges() {
+    // Retrieve the edited values
+    var nickname = document.getElementById("edit-nick").value;
+    var name = document.getElementById("edit-name").value;
+    var birthdate = document.getElementById("edit-bday").value;
+    var country = document.getElementById("edit-country").value;
+
+    // Save the edited values to localStorage
+    localStorage.setItem("nickname", nickname);
+    localStorage.setItem("name", name);
+    localStorage.setItem("birthdate", birthdate);
+    localStorage.setItem("country", country);
+
+    
+    
+}
+
+
 

@@ -57,11 +57,6 @@
     <h1>NEW POSTS</h1>
 
 
-    <div class="line under">
-
-    </div>
-
-
     <div class="card-container">
 
         <div class="card" id="uploadCard">
@@ -102,28 +97,32 @@
     </div>
 
     <script>
-        var videos = document.querySelectorAll('.video');
 
-        videos.forEach(function(video) {
-            video.addEventListener('mouseover', function() {
-                this.play();
-            });
+    var videos = document.querySelectorAll('.video');
+    var volumeControls = document.querySelectorAll('.volume-control');
 
-            video.addEventListener('mouseout', function() {
-                this.pause();
-                this.currentTime = 0;
-            });
+    videos.forEach(function(video) {
+        video.addEventListener('mouseover', function() {
+            this.play();
         });
 
-        var volumeControls = document.querySelectorAll('.volume-control');
+        video.addEventListener('mouseout', function() {
+            this.pause();
+            this.currentTime = 0;
+        });
+    });
 
-        volumeControls.forEach(function(volumeControl) {
-            var video = volumeControl.previousElementSibling;
-    
-            volumeControl.addEventListener('input', function() {
-                video.volume = this.value;
+    volumeControls.forEach(function(volumeControl) {
+        volumeControl.addEventListener('input', function() {
+            var volume = this.value;
+            volumeControls.forEach(function(control) {
+                control.value = volume;
+            });
+            videos.forEach(function(video) {
+                video.volume = volume;
             });
         });
+    });
    
         
     </script>

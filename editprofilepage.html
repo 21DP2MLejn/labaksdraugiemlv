@@ -56,7 +56,7 @@
         <div class="profile-pic-box">
             <img src="images\defaultpfp.png" alt="profile picture" class="profile-pic">
             <a href="profilepage.html">
-                <button class="save-but">
+                <button class="save-but" onclick="saveChanges()">
                     Save changes
                 </button>
             </a>
@@ -79,7 +79,7 @@
             </button>
 
             <p class="info-headers" id="birth-h">Date of birth:</p>
-            <input type="date" name="birth" id="edit-bday" value="28-03-2023" min="01-01-1900" max="01-01-2023">
+            <input type="text" name="birth" id="edit-bday">
             <button class="edit-but" id="edit-bday-but" onclick="editbdaybox()">
                 <img src="images\edit.png" alt="edit" class="edit-pic">
             </button>
@@ -107,5 +107,8 @@
             <img src="images\cuhanilogo.png" alt="Cuhani Logo" class="cuhanilogo">
         </div>
     </div>
+
+
+
 </body>
 </html>
