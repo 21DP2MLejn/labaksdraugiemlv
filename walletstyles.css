@@ -98,6 +98,15 @@ h2{
     width: 180px;
 }
 
+#logobut{
+    padding:0;
+    margin:0;
+    height: 58px;
+    width: 180px;
+    background: transparent;
+    border: none;
+}
+
 .menubutton{
     background-color: transparent;
     position: absolute;
