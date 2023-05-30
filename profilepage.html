@@ -67,7 +67,7 @@
                     Edit profile
                 </button>
             </a>
-            <button id="change-theme" onclick="change_theme()"></button>
+            <button id="change-theme" onclick="change_theme()">Theme preview</button>
         </div>
     </div>
     <script>
@@ -89,6 +89,8 @@
         document.getElementById("profile-pic-box").style.boxShadow = localStorage.ProfileShadow || '#4a0000';
         document.getElementById("edit-but").style.borderColor = localStorage.borderColor || '#d63838';
         document.getElementById("edit-but").style.backgroundColor = localStorage.bgColor || '#2a0000';
+        document.getElementById("change-theme").style.borderColor = localStorage.borderColor || '#d63838';
+        document.getElementById("change-theme").style.backgroundColor = localStorage.bgColor || '#2a0000';
         document.getElementById("text").style.textShadow = localStorage.textShadow || "#d63838 2px 2px";
             
         window.addEventListener("load", function() {

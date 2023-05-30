@@ -29,6 +29,19 @@ if(themeMode == 0){
     editButton.addEventListener("mouseout", function() {
     this.style.boxShadow = ""; // Reset the box shadow when not hovering
     });
+
+    document.getElementById("change-theme").style.borderColor = "#ffbb00";
+    document.getElementById("change-theme").style.backgroundColor = "#614702";
+
+    var editButton = document.getElementById("change-theme");
+
+    editButton.addEventListener("mouseover", function() {
+    this.style.boxShadow = "0px 3px 15px 5px #8a6501";
+    });
+
+    editButton.addEventListener("mouseout", function() {
+    this.style.boxShadow = ""; // Reset the box shadow when not hovering
+    });
     
     
     localStorage.bgColor = "#614702";
@@ -56,6 +69,19 @@ if(themeMode == 0){
     localStorage.textShadow = "#0bdb23 2px 2px";
 
     var editButton = document.getElementById("edit-but");
+
+    editButton.addEventListener("mouseover", function() {
+    this.style.boxShadow = "0px 3px 15px 5px #01590b";
+    });
+
+    editButton.addEventListener("mouseout", function() {
+    this.style.boxShadow = ""; // Reset the box shadow when not hovering
+    });
+
+    document.getElementById("change-theme").style.borderColor = "#0bdb23";
+    document.getElementById("change-theme").style.backgroundColor = "#014008";
+
+    var editButton = document.getElementById("change-theme");
 
     editButton.addEventListener("mouseover", function() {
     this.style.boxShadow = "0px 3px 15px 5px #01590b";
@@ -97,6 +123,19 @@ if(themeMode == 0){
     editButton.addEventListener("mouseout", function() {
     this.style.boxShadow = ""; // Reset the box shadow when not hovering
     });
+
+    document.getElementById("change-theme").style.borderColor = "#9311d1";
+    document.getElementById("change-theme").style.backgroundColor = "#2f0145";
+
+    var editButton = document.getElementById("change-theme");
+
+    editButton.addEventListener("mouseover", function() {
+    this.style.boxShadow = "0px 3px 15px 5px #430163";
+    });
+
+    editButton.addEventListener("mouseout", function() {
+    this.style.boxShadow = ""; // Reset the box shadow when not hovering
+    });
     
     
     localStorage.bgColor = "#2f0145";
@@ -120,6 +159,19 @@ if(themeMode == 0){
     document.getElementById("edit-but").style.backgroundColor = "#2a0000";
 
     var editButton = document.getElementById("edit-but");
+
+    editButton.addEventListener("mouseover", function() {
+    this.style.boxShadow = "0px 3px 15px 5px #4a0000";
+    });
+
+    editButton.addEventListener("mouseout", function() {
+    this.style.boxShadow = ""; // Reset the box shadow when not hovering
+    });
+
+    document.getElementById("change-theme").style.borderColor = "#d63838";
+    document.getElementById("change-theme").style.backgroundColor = "#2a0000";
+
+    var editButton = document.getElementById("change-theme");
 
     editButton.addEventListener("mouseover", function() {
     this.style.boxShadow = "0px 3px 15px 5px #4a0000";

@@ -206,6 +206,25 @@ h1{
 #change-theme{
     width: 150px;
     height: 45px;
+    position: relative;
+    margin-left: 20px;
+    margin: 20px;
+    z-index: 2;
+    border: 2px solid var(--color-light-red);
+    font-family: "Be Vietnam Pro";
+    font-size: medium;
+    color: white;
+    border-radius: 20px;
+    margin-left: 20px;
+    transition: transform .2s;
+    background-color: var(--color-red);
+    top: 20px;
+    left: 45px;
+}
+
+#change-theme:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 3px 15px 5px #4a0000;
 }
 
 
