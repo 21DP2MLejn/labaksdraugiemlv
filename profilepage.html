@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="profilepagestyles.css">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
     <script src="menuslider.js"></script>
+    <script src="change-theme.js"></script>
     <title>Cuhani.lv/profile</title>
 </head>
 <body>
     <container>
-    <div class="header">
+    <div id="header">
         <button id="menbut" onclick="openmenu()" class="menubutton"><img src="images\menubutton.png" class="menubuttonimage"></button>
         <div class="cuhanilogotextdiv">
             <a href="homepage.html">
@@ -50,24 +51,35 @@
         </div>
     </div>
 
-    <h1>YOUR PROFILE</h1>
-    <div class="profile-container">
-        <div class="profile-pic-box">
+    <h1 id="text">YOUR PROFILE</h1>
+    <div id="profile-container">
+        <div id="profile-pic-box">
             <img src="images\defaultpfp.png" alt="profile picture" class="profile-pic">
             <p class="info" id="surname">Nickname:</p>
             <p class="info" id="name">Name:</p>
             <p class="info" id="birth">Date of birth:</p>
             <p class="info" id="country">Country:</p>
             <p class="info" id="rank">Rank:</p>
-            <img src="images\cuhanilogo.png" alt="Cuhani Logo" class="cuhanilogo">
-
+            <img src="images\cuhanilogo.png" alt="Cuhani Logo" class="cuhanilogo"> 
             <a href="editprofilepage.html">
-                <button class="edit-but">
+                <button id="edit-but">
                     Edit profile
                 </button>
             </a>
-
+            <button id="change-theme" onclick="change_theme()"></button>
         </div>
     </div>
+    <script>
+        document.getElementById("header").style.borderBottomColor = localStorage.borderColor || '#d63838';
+        document.getElementById("header").style.boxShadow = localStorage.lineShadow || '#4a0000';
+        document.getElementById("profile-container").style.borderColor = localStorage.borderColor || '#d63838';
+        document.getElementById("profile-container").style.boxShadow = localStorage.ContainerShadow || '#4a0000';
+        document.getElementById("profile-pic-box").style.borderColor = localStorage.borderColor || '#d63838';
+        document.getElementById("profile-pic-box").style.boxShadow = localStorage.ProfileShadow || '#4a0000';
+        document.getElementById("edit-but").style.borderColor = localStorage.borderColor || '#d63838';
+        document.getElementById("edit-but").style.backgroundColor = localStorage.bgColor || '#2a0000';
+        document.getElementById("text").style.textShadow = localStorage.textShadow || "#d63838 2px 2px";
+        
+    </script>
 </body>
 </html>
