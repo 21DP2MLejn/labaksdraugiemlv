@@ -17,12 +17,12 @@ body {
     width: auto;
     height: auto;
     max-height: 90%;
-    margin-bottom: 20px; /* Add margin to create space between canvas and score */
-
+    margin-bottom: 20px; 
+    border: 30px solid #2a0000;
   }
   
   
   #score {
-    color: white; /* Set the color of the score text to white */
-    font-size: 1em; /* Adjust the font size of the score text */
+    color: white; 
+    font-size: 1em; 
   }
