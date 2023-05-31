@@ -33,7 +33,7 @@ window.onload = function () {
     showScore();
     document.addEventListener("keyup", changeDirection);  //for movements
     // Set snake speed
-    setInterval(update, 1000 / 10);
+    setInterval(update, 1000 / 8);
     end = document.getElementById("end");
     end.style.display = "none";
 }
@@ -94,7 +94,6 @@ function update() {
              
             // Snake eats own body
             gameOver = true;
-            
         }
     }
 }

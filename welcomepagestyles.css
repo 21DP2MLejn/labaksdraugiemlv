@@ -141,8 +141,8 @@ p{
 
 .csgo{
     animation: sliding 0.55s ease-in-out;
-    transform: skewX(225.5deg);
-    left: 450px;
+    transform: skewX(224.5deg);
+    left: 460.5px;
     top: 0;
 
 
@@ -157,10 +157,10 @@ p{
 
 @keyframes sliding {
     0%{
-        transform: skew(225.5deg) translateY(-1200px);
+        transform: skew(224.5deg) translateY(-1200px);
     }
     100%{
-        transform: skew(225.5deg);
+        transform: skew(224.5deg);
     }
     
 }
