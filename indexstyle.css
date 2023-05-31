@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    animation: fade-in 0.4s ease-in;
+}
+
+
+:root{
+    --color-light-black: #343434;
+    --color-red:#2a0000 ;
+    --color-light-red: #d63838;
+    --color-gray: #333333;
+    --color-dark-gray: #262626;
+    --color-black: #0A0A0A;
+}
+h1 {
+    color: white;
+    font-size: 5rem;
+    font-family: 'Be Vietnam Pro';
+    display: grid;
+    place-items: center;
+    animation: float 3.5s infinite ease-in-out;
+    content: '';
+    opacity: 1;
+    position: relative;
+    top: 50px;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 2;
+    text-shadow: var(--color-light-red) 2px 2px;
+}
+
+body {
+	background: linear-gradient(-45deg,  #000000, #11100f, #333333 );
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+
+.get-started{
+    position: absolute;
+    top: 250px;
+    left: 575px;
+    z-index: 2;
+}
+
+.already-registered{
+    position: absolute;
+    left: 675px;
+    top: 500px;
+    z-index: 2;
+
+}
+
+h2{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Be Vietnam Pro';
+    position: relative;
+    text-shadow: var(--color-light-red) 2px 2px;
+
+}
+
+p{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Be Vietnam Pro';
+    position: relative;
+    
+}
+
+.but{
+    background-color: var(--color-gray);
+    position: relative;
+    width: 150px;
+    height: 45px;
+    z-index: 2;
+    border: 2px solid var(--color-light-red);
+    font-family: "Be Vietnam Pro";
+    font-size: medium;
+    color: white;
+    border-radius: 20px;
+    margin-left: 20px;
+    transition: transform .2s;
+    background-color: var(--color-red);
+}
+
+.signup{
+    top: 280px;
+    left: 850px;
+}
+
+.login{
+    left: 675px;
+    top: 550px;
+}
+
+.but:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 3px 15px 5px #4a0000;
+}
+
+
+.slide-in{
+    position: fixed;
+    width: 20px;
+    height: 100%;
+    background-color: var(--color-red);
+    display: flex;
+    z-index: 1;
+    border: 2px solid var(--color-light-red);
+    box-shadow: 0px 3px 15px 5px #4a0000;
+    overflow: hidden;
+    
+}
+
+.csgo{
+    animation: sliding 0.55s ease-in-out;
+    transform: skewX(224.5deg);
+    left: 460.5px;
+    top: 0;
+
+
+}
+
+.valo{
+    animation: sliding-2 0.55s ease-in-out;
+    transform: skewX(-225.5deg);
+    left: 1420px;
+    top: 0;
+}
+
+@keyframes sliding {
+    0%{
+        transform: skew(224.5deg) translateY(-1200px);
+    }
+    100%{
+        transform: skew(224.5deg);
+    }
+    
+}
+
+@keyframes sliding-2 {
+    0%{
+        transform: skew(-225.5deg) translateY(-1200px);
+    }
+    100%{
+        transform: skew(-225.5deg);
+    }
+    
+}
+
+
+@keyframes fade-in {
+    0%{
+        opacity: 0%;
+    }
+
+    50%{
+        opacity: 50%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+
+}
+
+
+.image-triangle-1{
+    width: 1000px ;
+    height: 1000px;
+    transform: rotate(360deg);
+    opacity: 25%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background: url(images/csgoimg.png);
+    clip-path: polygon(100% 0% , 0% 100%, 100% 100%);
+    background-size: auto;
+    transform: scaleX(-1);
+    display: flex;
+}
+
+
+
+.image-triangle-2{
+    width: 970px ;
+    height: 1000px;
+    clip-path: polygon(100% 5% , 0% 100%, 100% 100%);
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: url(images/valorantimg.jpg) ;
+    opacity: 25%;
+    background-size: auto;
+    display: flex;
+}
+
