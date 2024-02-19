@@ -11,8 +11,6 @@ M큰su izveidot훮 vietne ir l카dz카ga draugiem.lv, bet p훮rtais카ta versija ar m�
 - Be Vietnam Pro (https://fonts.google.com/specimen/Be+Vietnam+Pro)
 
 
-## mes neesam gulejusi vairak par 4h katru nakti stradajot uz so projektu! (mes noteitki nespelejam counterstrike2)
-
 
 
 
